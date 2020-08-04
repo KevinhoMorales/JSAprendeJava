@@ -45,10 +45,10 @@
                 android:layout_height="50dp"
                 android:textAllCaps="false"
                 android:layout_marginRight="10dp"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 android:textSize="17dp"
                 android:layout_weight="0.5"
-                android:background="@drawable/roundbutton"
+                android:background="@drawable/roundemptyanswer"
                 android:text="Respuesta 1"/>
 
             <Button
@@ -57,10 +57,10 @@
                 android:layout_height="50dp"
                 android:textAllCaps="false"
                 android:layout_marginLeft="10dp"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 android:textSize="17dp"
                 android:layout_weight="0.5"
-                android:background="@drawable/roundbutton"
+                android:background="@drawable/roundemptyanswer"
                 android:text="Respuesta 2"/>
         </LinearLayout>
 
@@ -76,10 +76,10 @@
                 android:layout_height="50dp"
                 android:textAllCaps="false"
                 android:layout_marginRight="10dp"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 android:textSize="17dp"
                 android:layout_weight="0.5"
-                android:background="@drawable/roundbutton"
+                android:background="@drawable/roundemptyanswer"
                 android:text="Respuesta 3"/>
 
             <Button
@@ -88,10 +88,10 @@
                 android:layout_height="50dp"
                 android:textAllCaps="false"
                 android:layout_marginLeft="10dp"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 android:textSize="17dp"
                 android:layout_weight="0.5"
-                android:background="@drawable/roundbutton"
+                android:background="@drawable/roundemptyanswer"
                 android:text="Respuesta 4"/>
         </LinearLayout>
 
@@ -125,5 +125,17 @@
         app:layout_constraintBottom_toTopOf="@+id/button_next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/sb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:theme="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:thumb="@drawable/person"
+        app:layout_constraintBottom_toTopOf="@+id/textView5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
