@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/seekbar"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="¿Cómo hago para ver los archivos del directorio anterior?"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textQuestion">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/answer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/roundemptyanswer"
+                        android:text="Respuesta 1"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp" />
+
+                    <Button
+                        android:id="@+id/answer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/roundemptyanswer"
+                        android:text="Respuesta 2"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/answer3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/roundemptyanswer"
+                        android:text="Respuesta 3"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp" />
+
+                    <Button
+                        android:id="@+id/answer4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/roundemptyanswer"
+                        android:text="Respuesta 4"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:theme="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:thumb="@drawable/person"
+        app:layout_constraintBottom_toTopOf="@+id/textScore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1/20"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/next"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:background="@drawable/roundbutton"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

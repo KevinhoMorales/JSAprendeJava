@@ -4,31 +4,61 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.fragment.NavHostFragment;
 
 public class SecondFragment extends Fragment {
 
     @Override
-    public View onCreateView(
-            LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState
-    ) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_second, container, false);
-    }
+        View view = inflater.inflate(R.layout.fragment_a, container, false);
 
-    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
+        TextView question = view.findViewById(R.id.textQuestion);
+        TextView score = view.findViewById(R.id.textScore);
 
-        view.findViewById(R.id.button_next).setOnClickListener(new View.OnClickListener() {
+        Button answer1 = view.findViewById(R.id.answer1);
+        answer1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(SecondFragment.this)
-                        .navigate(R.id.action_SecondFragment_to_FirstFragment);
+            public void onClick(View v) {
+                System.out.println("Pregunta 1");
             }
         });
+
+        Button answer2 = view.findViewById(R.id.answer2);
+        answer2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.out.println("Pregunta 2");
+            }
+        });
+
+        Button answer3 = view.findViewById(R.id.answer3);
+        answer3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.out.println("Pregunta 3");
+            }
+        });
+
+        Button answer4 = view.findViewById(R.id.answer4);
+        answer4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.out.println("Pregunta 4");
+            }
+        });
+
+        Button nextQuestion = view.findViewById(R.id.button_next);
+        nextQuestion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.out.println("Siguiente pregunta");
+            }
+        });
+
+        return view;
     }
 }
