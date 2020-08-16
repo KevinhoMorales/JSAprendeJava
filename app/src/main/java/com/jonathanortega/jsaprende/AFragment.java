@@ -8,8 +8,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
-public class SecondFragment extends Fragment {
+public class AFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -55,6 +56,8 @@ public class SecondFragment extends Fragment {
         nextQuestion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                NavHostFragment.findNavController(AFragment.this)
+                        .navigate(R.id.action_SecondFragment_to_BFragment);
                 System.out.println("Siguiente pregunta");
             }
         });

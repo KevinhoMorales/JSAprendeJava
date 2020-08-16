@@ -3,26 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/WelcomeFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.jonathanortega.jsaprende.FirstFragment"
+        android:id="@+id/WelcomeFragment"
+        android:name="com.jonathanortega.jsaprende.WelcomeFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_welcome">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            app:destination="@id/AFragment" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.jonathanortega.jsaprende.SecondFragment"
+        android:id="@+id/AFragment"
+        android:name="com.jonathanortega.jsaprende.AFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_a">
-
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_SecondFragment_to_BFragment"
+            app:destination="@id/BFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/BFragment"
+        android:name="com.jonathanortega.jsaprende.BFragment"
+        android:label="BFragment"
+        tools:layout="@layout/fragment_b"/>
 </navigation>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondFragment">
+    tools:context=".AFragment">
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -134,7 +134,7 @@
         android:id="@+id/textScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1/20"
+        android:text="2/20"
         android:textColor="@android:color/black"
         android:textSize="20dp"
         android:layout_marginBottom="40dp"
