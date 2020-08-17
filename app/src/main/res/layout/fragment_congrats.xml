@@ -10,7 +10,9 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@drawable/ic_launcher_foreground"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:background="@drawable/person"
         app:layout_constraintBottom_toTopOf="@+id/button_next"
         app:layout_constraintTop_toTopOf="parent" />
 

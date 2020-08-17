@@ -134,7 +134,7 @@
         android:id="@+id/textScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="6/20"
+        android:text="06/20"
         android:textColor="@android:color/black"
         android:textSize="20dp"
         android:layout_marginBottom="40dp"
