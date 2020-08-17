@@ -14,19 +14,21 @@ import androidx.navigation.fragment.NavHostFragment;
 
 public class AFragment extends Fragment {
 
-    Boolean correct = false;
-    Button answer1;
-    Button answer2;
-    Button answer3;
-    Button answer4;
+    private Boolean correct = false;
+    private Button answer1;
+    private Button answer2;
+    private Button answer3;
+    private Button answer4;
+    private TextView question;
+    private TextView score;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_a, container, false);
 
-        TextView question = view.findViewById(R.id.textQuestion);
-        TextView score = view.findViewById(R.id.textScore);
+        question = view.findViewById(R.id.textQuestion);
+        score = view.findViewById(R.id.textScore);
 
         answer1 = view.findViewById(R.id.answer1);
         answer1.setOnClickListener(new View.OnClickListener() {
