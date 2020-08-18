@@ -190,5 +190,14 @@
         android:id="@+id/TFragment"
         android:name="com.jonathanortega.jsaprende.TFragment"
         android:label="TFragment"
-        tools:layout="@layout/fragment_t"/>
+        tools:layout="@layout/fragment_t">
+        <action
+            android:id="@+id/action_TFragment_to_congrats"
+            app:destination="@id/congrats" />
+    </fragment>
+    <fragment
+        android:id="@+id/congrats"
+        android:name="com.jonathanortega.jsaprende.Congrats"
+        android:label="fragment_congrats"
+        tools:layout="@layout/fragment_congrats" />
 </navigation>

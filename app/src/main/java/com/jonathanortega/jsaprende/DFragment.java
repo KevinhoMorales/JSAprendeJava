@@ -19,16 +19,11 @@ public class DFragment extends Fragment {
     private Button answer2;
     private Button answer3;
     private Button answer4;
-    private TextView question;
-    private TextView score;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_d, container, false);
-
-        question = view.findViewById(R.id.textQuestion);
-        score = view.findViewById(R.id.textScore);
 
         answer1 = view.findViewById(R.id.answer1);
         answer1.setOnClickListener(new View.OnClickListener() {
@@ -144,7 +139,7 @@ public class DFragment extends Fragment {
                     public void onClick(DialogInterface dialog, int which) {
                         resetAnswers();
                         NavHostFragment.findNavController(DFragment.this)
-                                .navigate(R.id.action_SecondFragment_to_BFragment);
+                                .navigate(R.id.action_DFragment_to_EFragment);
                     }
                 })
                 // A null listener allows the button to dismiss the dialog and take no further action.

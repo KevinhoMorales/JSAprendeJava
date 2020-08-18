@@ -125,6 +125,7 @@
         android:layout_marginBottom="10dp"
         android:theme="@style/Widget.AppCompat.SeekBar.Discrete"
         android:thumb="@drawable/person"
+        android:progress="9"
         app:layout_constraintBottom_toTopOf="@+id/textScore"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
