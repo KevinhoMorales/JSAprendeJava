@@ -28,5 +28,167 @@
         android:id="@+id/BFragment"
         android:name="com.jonathanortega.jsaprende.BFragment"
         android:label="BFragment"
-        tools:layout="@layout/fragment_b"/>
+        tools:layout="@layout/fragment_b">
+        <action
+            android:id="@+id/action_BFragment_to_CFragment"
+            app:destination="@id/CFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CFragment"
+        android:name="com.jonathanortega.jsaprende.CFragment"
+        android:label="CFragment"
+        tools:layout="@layout/fragment_c">
+        <action
+            android:id="@+id/action_CFragment_to_DFragment"
+            app:destination="@id/DFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/DFragment"
+        android:name="com.jonathanortega.jsaprende.DFragment"
+        android:label="DFragment"
+        tools:layout="@layout/fragment_d">
+        <action
+            android:id="@+id/action_DFragment_to_EFragment"
+            app:destination="@id/EFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/EFragment"
+        android:name="com.jonathanortega.jsaprende.EFragment"
+        android:label="EFragment"
+        tools:layout="@layout/fragment_e">
+        <action
+            android:id="@+id/action_EFragment_to_FFragment"
+            app:destination="@id/FFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FFragment"
+        android:name="com.jonathanortega.jsaprende.FFragment"
+        android:label="FFragment"
+        tools:layout="@layout/fragment_f" >
+        <action
+            android:id="@+id/action_FFragment_to_GFragment"
+            app:destination="@id/GFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/GFragment"
+        android:name="com.jonathanortega.jsaprende.GFragment"
+        android:label="GFragment"
+        tools:layout="@layout/fragment_g" >
+        <action
+            android:id="@+id/action_GFragment_to_HFragment"
+            app:destination="@id/HFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/HFragment"
+        android:name="com.jonathanortega.jsaprende.HFragment"
+        android:label="HFragment"
+        tools:layout="@layout/fragment_h" >
+        <action
+            android:id="@+id/action_HFragment_to_IFragment"
+            app:destination="@id/IFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/IFragment"
+        android:name="com.jonathanortega.jsaprende.IFragment"
+        android:label="IFragment"
+        tools:layout="@layout/fragment_i" >
+        <action
+            android:id="@+id/action_IFragment_to_JFragment"
+            app:destination="@id/JFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/JFragment"
+        android:name="com.jonathanortega.jsaprende.JFragment"
+        android:label="JFragment"
+        tools:layout="@layout/fragment_j" >
+        <action
+            android:id="@+id/action_JFragment_to_KFragment"
+            app:destination="@id/KFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/KFragment"
+        android:name="com.jonathanortega.jsaprende.KFragment"
+        android:label="KFragment"
+        tools:layout="@layout/fragment_k" >
+        <action
+            android:id="@+id/action_KFragment_to_LFragment"
+            app:destination="@id/LFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/LFragment"
+        android:name="com.jonathanortega.jsaprende.LFragment"
+        android:label="LFragment"
+        tools:layout="@layout/fragment_l" >
+        <action
+            android:id="@+id/action_LFragment_to_MFragment"
+            app:destination="@id/MFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MFragment"
+        android:name="com.jonathanortega.jsaprende.MFragment"
+        android:label="MFragment"
+        tools:layout="@layout/fragment_m" >
+        <action
+            android:id="@+id/action_MFragment_to_NFragment"
+            app:destination="@id/NFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/NFragment"
+        android:name="com.jonathanortega.jsaprende.NFragment"
+        android:label="NFragment"
+        tools:layout="@layout/fragment_n" >
+        <action
+            android:id="@+id/action_NFragment_to_OFragment"
+            app:destination="@id/OFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/OFragment"
+        android:name="com.jonathanortega.jsaprende.OFragment"
+        android:label="OFragment"
+        tools:layout="@layout/fragment_o" >
+        <action
+            android:id="@+id/action_OFragment_to_PFragment"
+            app:destination="@id/PFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PFragment"
+        android:name="com.jonathanortega.jsaprende.PFragment"
+        android:label="PFragment"
+        tools:layout="@layout/fragment_p">
+        <action
+            android:id="@+id/action_PFragment_to_QFragment"
+            app:destination="@id/QFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/QFragment"
+        android:name="com.jonathanortega.jsaprende.QFragment"
+        android:label="QFragment"
+        tools:layout="@layout/fragment_q">
+        <action
+            android:id="@+id/action_QFragment_to_RFragment"
+            app:destination="@id/RFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/RFragment"
+        android:name="com.jonathanortega.jsaprende.RFragment"
+        android:label="RFragment"
+        tools:layout="@layout/fragment_r">
+        <action
+            android:id="@+id/action_RFragment_to_SFragment"
+            app:destination="@id/SFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SFragment"
+        android:name="com.jonathanortega.jsaprende.SFragment"
+        android:label="SFragment"
+        tools:layout="@layout/fragment_s">
+        <action
+            android:id="@+id/action_SFragment_to_TFragment"
+            app:destination="@id/TFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/TFragment"
+        android:name="com.jonathanortega.jsaprende.TFragment"
+        android:label="TFragment"
+        tools:layout="@layout/fragment_t"/>
 </navigation>
