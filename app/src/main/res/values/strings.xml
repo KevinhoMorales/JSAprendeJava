@@ -15,8 +15,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-    // QA
-
+    <!-- TODO: QA -->
     <string name="question1">¿La multiprogramación se da cuando?</string>
     <string name="answer11">Dos procesos se encuentran al mismo tiempo en el estado "listo"</string>
     <string name="answer12">Dos procesos se encuentran al mismo tiempo en el estado "espera"</string>
@@ -63,5 +62,64 @@
     <string name="answer103">SRTN</string>
     <string name="answer104">ROUND ROBIN</string>
 
+    <string name="question11">¿Secuencia de tareas encadenadas muy pequeña que puede ser ejecutada por un sistema operativo?</string>
+    <string name="answer111">Proceso</string>
+    <string name="answer112">Hilo</string>
+    <string name="answer113">Procesador</string>
+    <string name="answer114">Algoritmo de planiﬁcación de procesos</string>
+
+    <string name="question12">¿Los distintos _____ de ejecución comparten una serie de recursos ?</string>
+    <string name="answer121">Proceso</string>
+    <string name="answer122">Hilo</string>
+    <string name="answer123">Procesadores</string>
+    <string name="answer124">Algoritmos</string>
+
+    <string name="question13">¿Se puede tomar una decisión de planiﬁcación en cada interrupción del reloj?</string>
+    <string name="answer131">Verdadero</string>
+    <string name="answer132">Falso</string>
+
+    <string name="question14">¿Característica que no permite a una aplicación realizar varias tareas a la vez (concurrentemente)?</string>
+    <string name="answer141">Destrucción de procesos antiguos por nuevos</string>
+    <string name="answer142">Destrucción de algoritmos antiguos por nuevos</string>
+    <string name="answer143">Destrucción de hilos antiguos por nuevos</string>
+    <string name="answer144">Destrucción de procesadores antiguos por nuevos</string>
+
+    <string name="question15">¿Tarea que puede ser ejecutada al mismo tiempo que otra tarea?</string>
+    <string name="answer151">Hilos</string>
+    <string name="answer152">Procesos</string>
+    <string name="answer153">Algoritmos</string>
+    <string name="answer154">Semáforos</string>
+
+    <string name="question16">¿Cuáles son las propiedades de un hilo?</string>
+    <string name="answer161">Contador de programa</string>
+    <string name="answer162">Contador de programa, pila de programa y estado del programa</string>
+    <string name="answer163">Contador de programa, pila de ejecución y estado del CPU</string>
+    <string name="answer164">Contador de ejecución, pila de programa y estado del CPU</string>
+
+    <string name="question17">¿Un proceso sigue en ejecución mientras al menos ___ de sus hilos de ejecución siga activo?</string>
+    <string name="answer171">Dos</string>
+    <string name="answer172">Tres</string>
+    <string name="answer173">Uno</string>
+    <string name="answer174">Ninguno</string>
+
+    <string name="question18">¿Los semáforos se emplean para permitir el acceso a diferentes partes de programas llamadas ___?</string>
+    <string name="answer181">Hilo</string>
+    <string name="answer182">Secciones especiales</string>
+    <string name="answer183">Semáforo</string>
+    <string name="answer184">Secciones críticas</string>
+
+    <string name="question19">¿En los semáforos ___ los procesos pueden estar suspendidos en lista?</string>
+    <string name="answer191">Binarios</string>
+    <string name="answer192">Multiple valor</string>
+    <string name="answer193">Se ordenan</string>
+    <string name="answer194">Se escalan</string>
+    <string name="answer195">Se escalan en el tiempo</string>
+    <string name="answer196">Se orden aleatoriamente</string>
+
+    <string name="question20">¿En la exclución mutua?</string>
+    <string name="answer201">Los procesos se excluyen entre si</string>
+    <string name="answer202">Un proceso puede excluir a los demás para usar un hilo compartido</string>
+    <string name="answer203">Un proceso puede excluir a los demás para usar un recurso compartido</string>
+    <string name="answer204">Los hilos no funcionan sin los procesos</string>
 
 </resources>
