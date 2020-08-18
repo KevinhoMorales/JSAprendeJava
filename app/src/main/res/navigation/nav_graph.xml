@@ -199,5 +199,9 @@
         android:id="@+id/congrats"
         android:name="com.jonathanortega.jsaprende.Congrats"
         android:label="fragment_congrats"
-        tools:layout="@layout/fragment_congrats" />
+        tools:layout="@layout/fragment_congrats" >
+        <action
+            android:id="@+id/action_congrats_to_WelcomeFragment"
+            app:destination="@id/WelcomeFragment" />
+    </fragment>
 </navigation>

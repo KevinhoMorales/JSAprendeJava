@@ -13,11 +13,11 @@
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
         android:background="@drawable/person"
-        app:layout_constraintBottom_toTopOf="@+id/button_next"
+        app:layout_constraintBottom_toTopOf="@+id/button_finish"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_next"
+        android:id="@+id/button_finish"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@drawable/roundbutton"
