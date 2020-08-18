@@ -13,4 +13,55 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    // QA
+
+    <string name="question1">¿La multiprogramación se da cuando?</string>
+    <string name="answer11">Dos procesos se encuentran al mismo tiempo en el estado "listo"</string>
+    <string name="answer12">Dos procesos se encuentran al mismo tiempo en el estado "espera"</string>
+    <string name="answer13">Dos procesos se encuentran al mismo tiempo en el estado "bloqueado"</string>
+
+    <string name="question2">¿Se puede tener una decisión de planiﬁcación cuando un proceso termina?</string>
+    <string name="answer21">Verdadero</string>
+    <string name="answer22">Falso</string>
+
+    <string name="question3">¿Se puede tomar una decisión de planiﬁcación en cada interrupción del reloj?</string>
+    <string name="answer31">Verdadero</string>
+    <string name="answer32">Falso</string>
+
+    <string name="question4">¿Seleccione una categoría que corresponda a los algoritmos de planiﬁcación?</string>
+    <string name="answer41">Apoderativo</string>
+    <string name="answer42">Apropiativo</string>
+    <string name="answer43">No apoderativo</string>
+
+    <string name="question5">¿Selecciona un proceso para ejecutarlo y después sólo deja que se ejecute hasta que el mismo se bloquea?</string>
+    <string name="answer51">Algoritmo no apropiativo</string>
+    <string name="answer52">Algoritmo apropiativo</string>
+
+    <string name="question6">¿Selecciona un proceso y deja que se ejecute por un máximo de tiempo ﬁjo?</string>
+    <string name="answer61">Algoritmo no apropiativo</string>
+    <string name="answer62">Algoritmo apropiativo</string>
+
+    <string name="question7">¿El algoritmo FIFO es un tipo de algoritmo?</string>
+    <string name="answer71">Apropiativo</string>
+    <string name="answer72">No apropiativo</string>
+
+    <string name="question8">¿La CPU se asignan a los procesos en el orden en el que la solicitan?</string>
+    <string name="answer81">SJF</string>
+    <string name="answer82">FIFO</string>
+    <string name="answer83">SRTN</string>
+    <string name="answer84">ROUND ROBIN</string>
+
+    <string name="question9">¿El algoritmo SRTN es un tipo de algoritmo?</string>
+    <string name="answer91">Apropiativo</string>
+    <string name="answer92">No apropiativo</string>
+
+    <string name="question10">¿El planiﬁcador siempre selecciona el proceso cuyo tiempo restante de ejecución sea el más corto?</string>
+    <string name="answer101">FIFO</string>
+    <string name="answer102">SJF</string>
+    <string name="answer103">SRTN</string>
+    <string name="answer104">ROUND ROBIN</string>
+
+
 </resources>

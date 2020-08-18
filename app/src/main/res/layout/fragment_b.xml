@@ -10,6 +10,7 @@
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/seekbar"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -22,11 +23,11 @@
                 android:id="@+id/textQuestion"
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
-                android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginRight="20dp"
                 android:gravity="center"
-                android:text="¿Cómo hago para ver los archivos del directorio anterior?"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/question2"
                 android:textColor="@android:color/black"
                 android:textSize="20dp"
                 android:textStyle="normal"
@@ -46,67 +47,28 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textQuestion">
 
-                <LinearLayout
+                <Button
+                    android:id="@+id/answer1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_weight="0.5"
                     android:layout_marginBottom="10dp"
-                    android:orientation="horizontal">
+                    android:background="@drawable/roundemptyanswer"
+                    android:text="@string/answer21"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="17dp" />
 
-                    <Button
-                        android:id="@+id/answer1"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_weight="0.5"
-                        android:background="@drawable/roundemptyanswer"
-                        android:text="Respuesta 1"
-                        android:textAllCaps="false"
-                        android:textColor="@android:color/black"
-                        android:textSize="17dp" />
-
-                    <Button
-                        android:id="@+id/answer2"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_weight="0.5"
-                        android:background="@drawable/roundemptyanswer"
-                        android:text="Respuesta 2"
-                        android:textAllCaps="false"
-                        android:textColor="@android:color/black"
-                        android:textSize="17dp" />
-                </LinearLayout>
-
-                <LinearLayout
+                <Button
+                    android:id="@+id/answer2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:id="@+id/answer3"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_weight="0.5"
-                        android:background="@drawable/roundemptyanswer"
-                        android:text="Respuesta 3"
-                        android:textAllCaps="false"
-                        android:textColor="@android:color/black"
-                        android:textSize="17dp" />
-
-                    <Button
-                        android:id="@+id/answer4"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_weight="0.5"
-                        android:background="@drawable/roundemptyanswer"
-                        android:text="Respuesta 4"
-                        android:textAllCaps="false"
-                        android:textColor="@android:color/black"
-                        android:textSize="17dp" />
-                </LinearLayout>
+                    android:layout_height="100dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/roundemptyanswer"
+                    android:text="@string/answer22"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="17dp" />
 
             </LinearLayout>
 
