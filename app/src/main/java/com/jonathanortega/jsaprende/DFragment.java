@@ -18,7 +18,6 @@ public class DFragment extends Fragment {
     private Button answer1;
     private Button answer2;
     private Button answer3;
-    private Button answer4;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -36,8 +35,6 @@ public class DFragment extends Fragment {
                 answer2.setTextColor(getActivity().getResources().getColor(R.color.black));
                 answer3.setBackgroundResource(R.drawable.roundemptyanswer);
                 answer3.setTextColor(getActivity().getResources().getColor(R.color.black));
-                answer4.setBackgroundResource(R.drawable.roundemptyanswer);
-                answer4.setTextColor(getActivity().getResources().getColor(R.color.black));
                 correct = true;
             }
         });
@@ -53,8 +50,6 @@ public class DFragment extends Fragment {
                 answer2.setTextColor(getActivity().getResources().getColor(R.color.white));
                 answer3.setBackgroundResource(R.drawable.roundemptyanswer);
                 answer3.setTextColor(getActivity().getResources().getColor(R.color.black));
-                answer4.setBackgroundResource(R.drawable.roundemptyanswer);
-                answer4.setTextColor(getActivity().getResources().getColor(R.color.black));
                 correct = false;
             }
         });
@@ -70,25 +65,6 @@ public class DFragment extends Fragment {
                 answer2.setTextColor(getActivity().getResources().getColor(R.color.black));
                 answer3.setBackgroundResource(R.drawable.roundselectanswer);
                 answer3.setTextColor(getActivity().getResources().getColor(R.color.white));
-                answer4.setBackgroundResource(R.drawable.roundemptyanswer);
-                answer4.setTextColor(getActivity().getResources().getColor(R.color.black));
-                correct = false;
-            }
-        });
-
-        answer4 = view.findViewById(R.id.answer4);
-        answer4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                System.out.println("Pregunta 4");
-                answer1.setBackgroundResource(R.drawable.roundemptyanswer);
-                answer1.setTextColor(getActivity().getResources().getColor(R.color.black));
-                answer2.setBackgroundResource(R.drawable.roundemptyanswer);
-                answer2.setTextColor(getActivity().getResources().getColor(R.color.black));
-                answer3.setBackgroundResource(R.drawable.roundemptyanswer);
-                answer3.setTextColor(getActivity().getResources().getColor(R.color.black));
-                answer4.setBackgroundResource(R.drawable.roundselectanswer);
-                answer4.setTextColor(getActivity().getResources().getColor(R.color.white));
                 correct = false;
             }
         });
@@ -154,7 +130,5 @@ public class DFragment extends Fragment {
         answer2.setTextColor(getActivity().getResources().getColor(R.color.black));
         answer3.setBackgroundResource(R.drawable.roundemptyanswer);
         answer3.setTextColor(getActivity().getResources().getColor(R.color.black));
-        answer4.setBackgroundResource(R.drawable.roundemptyanswer);
-        answer4.setTextColor(getActivity().getResources().getColor(R.color.black));
     }
 }
