@@ -32,7 +32,7 @@ public class GFragment extends Fragment {
                 answer1.setTextColor(getActivity().getResources().getColor(R.color.white));
                 answer2.setBackgroundResource(R.drawable.roundemptyanswer);
                 answer2.setTextColor(getActivity().getResources().getColor(R.color.black));
-                correct = true;
+                correct = false;
             }
         });
 
@@ -45,7 +45,7 @@ public class GFragment extends Fragment {
                 answer1.setTextColor(getActivity().getResources().getColor(R.color.black));
                 answer2.setBackgroundResource(R.drawable.roundselectanswer);
                 answer2.setTextColor(getActivity().getResources().getColor(R.color.white));
-                correct = false;
+                correct = true;
             }
         });
 

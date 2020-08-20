@@ -38,7 +38,7 @@ public class QFragment extends Fragment {
                 answer3.setTextColor(getActivity().getResources().getColor(R.color.black));
                 answer4.setBackgroundResource(R.drawable.roundemptyanswer);
                 answer4.setTextColor(getActivity().getResources().getColor(R.color.black));
-                correct = true;
+                correct = false;
             }
         });
 
@@ -89,7 +89,7 @@ public class QFragment extends Fragment {
                 answer3.setTextColor(getActivity().getResources().getColor(R.color.black));
                 answer4.setBackgroundResource(R.drawable.roundselectanswer);
                 answer4.setTextColor(getActivity().getResources().getColor(R.color.white));
-                correct = false;
+                correct = true;
             }
         });
 

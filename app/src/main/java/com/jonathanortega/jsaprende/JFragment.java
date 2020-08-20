@@ -38,7 +38,7 @@ public class JFragment extends Fragment {
                 answer3.setTextColor(getActivity().getResources().getColor(R.color.black));
                 answer4.setBackgroundResource(R.drawable.roundemptyanswer);
                 answer4.setTextColor(getActivity().getResources().getColor(R.color.black));
-                correct = true;
+                correct = false;
             }
         });
 
@@ -72,7 +72,7 @@ public class JFragment extends Fragment {
                 answer3.setTextColor(getActivity().getResources().getColor(R.color.white));
                 answer4.setBackgroundResource(R.drawable.roundemptyanswer);
                 answer4.setTextColor(getActivity().getResources().getColor(R.color.black));
-                correct = false;
+                correct = true;
             }
         });
 
